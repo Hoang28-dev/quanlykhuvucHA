@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <fieldset class="form">
+      <legend>Thông tin</legend>
+      <form action="">
+        <label for="maKV">Mã khu vực</label>
+        <span id="maKV-error"></span>
+        <input class="input-text" type="text" name="maKV" id="maKV" />
+        <label for="tenKV">Tên Khu vực</label>
+        <span id="tenKV-error"></span>
+        <input class="input-text" type="text" name="tenKV" id="tenKV" />
+        <label for="diaChi">Địa chỉ</label>
+        <span id="diaChi-error"></span>
+        <input class="input-text" type="text" name="diaChi" id="diaChi" />
+        <label for="SDT">Số điện thoại</label>
+        <span id="SDT-error"></span>
+        <input class="input-text" type="text" name="SDT" id="SDT" />
+        <!-- <input class="input-radio" checked="true" type="radio" name="gender" id="gender-male" value="male" />
+        <label for="gender-male">Male - Nam</label>
+        <input class="input-radio" type="radio" name="gender" id="gender-female" value="female" />
+        <label for="gender-female">Female - Nữ</label>
+        <span id="gender-error"></span> -->
+        <select class="select" id="select">
+          <option id="defaul" value="Đang hoạt động" selected="true">Đang hoạt động</option>
+          <option value="Tạm đóng">Tạm đóng</option>
+          <option value="Thử nghiệm">Thử nghiệm</option>
+          <option value="Đang xây dựng">Đang xây dựng</option>
+        </select>
+        <br /><br />
+        <button id="btn-add" onclick="add()" type="button">Thêm</button>
+        <!-- <button type="button">Sửa</button> -->
+        <!-- <button type="button">Xoá</button> -->
+        <button id="btn-save" onclick="btnluu()" type="button">Lưu</button>
+      </form>
+    </fieldset>
+    
+    <fieldset id="table-field">
+        <legend>Danh sách</legend>
+        <input id="txtSearch" type="search" placeholder="Tìm kiếm" oninput="search()"/>
+        <div class="table">
+          <table id="table-KV">
+            <tr class="tr">
+              <td>#</td>
+              <td>Mã khu vực</td>
+              <td>Tên khu vực</td>
+              <td>Địa chỉ</td>
+              <td>Số điện thoại</td>
+              <td>Giới tính</td>
+            </tr>
+          </table>
+    </fieldset>
+
+
+
+
+
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script src="/JS/Script.js"></script>
+    </div>
+  </body>
+</html>
